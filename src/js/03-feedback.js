@@ -16,7 +16,7 @@ const onInputForm = (evt) => {
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
-refs.formEl.addEventListener('input', throttle(onInputForm, 2000));
+refs.formEl.addEventListener('input', throttle(onInputForm, 500));
 
 
 let formData = localStorage.getItem('feedback-form-state');
